@@ -1,0 +1,279 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding: 15px 18px !important;
+}
+
+.logo {
+    font-weight: 700;
+    color: white !important;
+}
+
+.nav-item {
+    margin: 0px 10px;
+}
+
+.nav-item .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgb(255, 129, 57);
+    width: 0px;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 129, 57);
+}
+
+.btn-navbar {
+    display: inline-block;
+    padding: 10px 43px;
+    border: 1px solid rgb(36, 193, 255);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(36, 193, 255);
+    transition: 0.2s ease;
+}
+
+.btn-navbar:hover {
+    background-color: transparent;
+    color: rgb(255, 129, 57);
+    border: 1px solid rgb(255, 129, 57);
+}
+
+/*Etusivu*/
+
+.content-home2 {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.home-span {
+    color: rgb(255, 129, 57);
+}
+
+.para-home {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(163, 165, 167);
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+}
+
+.home-links {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(36, 193, 255);
+    background-color: rgb(36, 193, 255);
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-2 {
+    border: 1px solid rgb(36, 193, 255);
+    color: rgb(36, 193, 255);
+    background-color: transparent;
+}
+
+.home-links:hover {
+    background-color: transparent;
+    color: rgb(255, 129, 57);
+    border: 1px solid rgb(255, 129, 57) !important;
+}
+
+.box-container img {
+    width: 100%;
+    height: auto;
+    width: 500px;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Meistä-osio */
+
+.about-us-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.about-us {
+    width: 100%;
+    height: 320px;
+    background-color: rgb(54, 54, 54);
+    margin-top: 140px;
+    position: relative;
+}
+
+.content-about {
+    padding: 10px 38px;
+}
+
+.heading-about{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 129, 57);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 46px;
+    height: 2px;
+}
+
+.para-about {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 21px;
+    margin: 25px 0px;
+}
+
+.link-about {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 129, 57, 0.5);
+    color: rgb(255, 129, 57);
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 22px;
+}
+
+.link-about:hover {
+    color: white;
+}
+
+.img-about {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+}
+
+/* Tuote-osio*/
+
+.product-category {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.heading-product {
+    font: size 34px;
+    color: rgb(255, 129, 57);
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.heading-product::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 56px;
+    height: 2px;
+}
+
+.card-product{
+    padding: 14px 10px;
+    background-color: #242323 !important;
+}
+
+.img-card {
+    height: 190px !important;
+}
+
+.card-title {
+    font-size: 14px;
+    color: rgb(255, 129, 57);
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 129, 57);
+    padding: 5px 0px;
+    margin: 10px 0px;
+    margin-bottom: 20px !important;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.873);
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.btn-product-ctg {
+    color: rgb(255, 129, 57);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-product-ctg:hover{
+    color: rgb(250, 186, 144);
+
+}
+
+
+
